@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/index.css">
+  <script src="/scripts/index.js" defer></script>
+  <title>Juego de memoria</title>
+</head>
+
+<body>
+  <header>
+    <h1> Juego de memoria</h1>
+  </header>
+  <main>
+    <div id="contenedor">
+      <img id="0" src="/images/reverso.png" alt="" onclick="voltearCarta(this)" data-id=0>
+      <img id="1" src="/images/reverso.png" alt="" onclick="voltearCarta(this)" data-id=1>
+      <img id="2" src="/images/reverso.png" alt="" onclick="voltearCarta(this)" data-id=2>
+      <img id="3" src="/images/reverso.png" alt="" onclick="voltearCarta(this)" data-id=3>
+      <img id="4" src="/images/reverso.png" alt="" onclick="voltearCarta(this)" data-id=4>
+      <img id="5" src="/images/reverso.png" alt="" onclick="voltearCarta(this)" data-id=5>
+      <img id="6" src="/images/reverso.png" alt="" onclick="voltearCarta(this)" data-id=6>
+      <img id="7" src="/images/reverso.png" alt="" onclick="voltearCarta(this)" data-id=7>
+    </div>
+    <div id="resultado">
+      <h2> Parejas encontradas</h2>
+      <p id="parejas"> </p>
+    </div>
+    <div id="reinicio">
+      <button onclick="location.reload()">Reiniciar</button>
+    </div>
+    <audio id="Coincidencia" src="/audios/match.wav"></audio>
+    <audio id="Error" src="/audios/nomatch.wav"></audio>
+    <div id="victoria">
+      <img id="win" src ="/images/victoria.jpg">
+    </div>
+  </main>
+
+</body>
+
+</html>

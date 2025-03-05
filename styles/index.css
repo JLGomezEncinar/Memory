@@ -1,0 +1,35 @@
+header {
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 80px;
+
+
+}
+
+#reinicio {
+    text-align: center;
+}
+#victoria {
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center;
+}
+#win {
+    width: 300px;
+    height: 200px;
+    visibility: hidden;
+}
+#contenedor {
+    display: flex;
+    justify-content: space-evenly;
+   
+    align-items: center;
+}
+
+#resultado {
+    text-align: center;
+}
