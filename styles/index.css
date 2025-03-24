@@ -23,7 +23,7 @@ img {
     height: 200px;
     visibility: hidden;
 }
-#contenedor {
+.cartas {
     display: flex;
     justify-content: space-evenly;
    
