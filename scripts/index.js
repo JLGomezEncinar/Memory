@@ -11,6 +11,7 @@ window.onload = function () {
         element.src = "/images/reverso.png"
         element.setAttribute("data-id", arrayMezclado[i]);
         element.setAttribute("id", i);
+        element.classList.add("Cartas")
         element.style.visibility = "visible";
 
 
@@ -22,13 +23,9 @@ window.onload = function () {
     let cartaData = null;
     let cartaSeleccionada2 = null;
     let cartaData2 = null;
-   
-    contenedorCartas.addEventListener("click", function (event) {
-        if (event.target.tagName === "IMG") {
-            let carta = event.target;
-
-
-
+    let voltearCartas = document.querySelectorAll(".Cartas");
+    voltearCartas.forEach(carta => {
+        carta.addEventListener("click", function () {
             if (cartaSeleccionada != null && cartaSeleccionada2 != null) {
                 return
             }
@@ -77,8 +74,8 @@ window.onload = function () {
 
                 }
             }
-        }
-})
+        })
+    })
 }
 function mezclarCartas(array) {
     let nuevoArray = array.slice();
